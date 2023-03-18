@@ -1,0 +1,181 @@
+.container{
+    width: 100%;
+    background-color: gray;
+    height: 30vw;
+ }
+  .burger {
+    width: 30vw;
+    height: 30vw;
+    position: relative;   
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .burg{
+    padding-top: 10%;
+    background-color: antiquewhite;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+  .desk{
+    display: flex;
+    flex-direction: row;
+    background-color: antiquewhite;
+  }
+  
+  .burger__top {
+    width: 100%;
+    height: 25%;
+    background-color: #d9a46a;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .burger__lettuce {
+    width: 100%;
+    height: 20%;
+    background-color: #3d9970;
+    position: absolute;
+    top: 25%;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .burger__meat {
+    width: 80%;
+    height: 20%;
+    background-color: #ac3432;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    border-radius: 5px;
+  }
+  
+  .burger__cheese {
+    width: 70%;
+    height: 15%;
+    background-color: #ffdc00;
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    border-radius: 5px;
+  }
+  
+  .burger__bottom {
+    width: 100%;
+    height: 40%;
+    background-color: #d9a46a;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+  }
+  .animate {
+    animation-name: bounce;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-20px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .shop{
+    display: flex;
+    flex-direction: row;
+    font-size:2vw;
+  }
+  .vegan{
+    padding-left: 10%;
+  } 
+ .hspace{
+    width: 10%;
+ }
+ .vegan-label{
+    display:none;
+ }
+.counter{
+    text-align: center;
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+    
+}
+
+.cup{
+    --bubble-1: radial-gradient(circle at 35% 40%,brown 0.1em, transparent 0.4em);
+    --bubble-2: radial-gradient(circle at 65% 60%,brown 0.1em, transparent 0.3em);
+    --bubble-3: radial-gradient(circle at 45% 80%,brown 0.1em, transparent 0.2em);
+    
+    --bubbles:var(--bubble-1),var(--bubble-2),var(--bubble-3);
+    
+    width:18vw;
+    height:18vw;
+    background:var(--bubbles),linear-gradient(to bottom,lightskyblue 25%,transparent 25%),brown;
+    bottom:calc((100%-7.5vw)/2);
+    left:calc(2.5vw+(6vw-2vw)/2);
+    clip-path:polygon(0 0,100% 0,90% 100%,10% 100%);
+    display: none;
+    padding-top: 20%;
+    padding-right: -10%;
+   }
+   
+   #invoice-POS{
+    box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5);
+    padding:2mm;
+    margin: 0 auto;
+    width: 30%;
+
+    background: #FFF;
+
+   } 
+  #top, #mid,#bot{ /* Targets all id with 'col-' */
+    border-bottom: 1px solid #EEE;
+  }
+  
+  #top{min-height: 100px;}
+  #mid{min-height: 80px;} 
+  #bot{ min-height: 50px;}
+  
+
+  .title p{text-align: right;} 
+  table{
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  
+ 
+  .tabletitle{
+    font-size: 1vw;
+    background: #EEE;
+  }
+  .service{
+    border-bottom: 1px solid #EEE;
+    font-size: 1vw;
+}
+  .item{
+    width: 24mm;
+    font-size: 1vw;
+}
+  .itemtext{
+    font-size: 1.5vw;
+}
+  
+  #legalcopy{
+    margin-top: 5mm;
+  }
+ .space{
+    padding-top: 1vw;
+ }
+
+  
